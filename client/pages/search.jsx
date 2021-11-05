@@ -4,11 +4,11 @@ import Link from "next/link";
 const Search = () => {
   return (
     <Wrapper>
-      <Link href="/">
-        <ButtonContainer>
+      <ButtonContainer class="bg-white">
+        <Link href="/">
           <BackButton src="https://img.icons8.com/ios-filled/50/000000/left.png" />
-        </ButtonContainer>
-      </Link>
+        </Link>
+      </ButtonContainer>
       <InputContainer>
         <FromToIcons>
           <Circle src="https://img.icons8.com/ios-filled/50/9CA3AF/filled-circle.png" />
@@ -25,7 +25,7 @@ const Search = () => {
         <StarIcon src="https://img.icons8.com/ios-filled/50/ffffff/star--v1.png" />
         Saved Places
       </SavedPlaces>
-      <ButtonContainer class="flex flex-1 items-center m-4 justify-center">
+      <ButtonContainer>
         <button class="bg-black text-white py-2 px-4 flex-1">
           Confirm Locations
         </button>
@@ -41,11 +41,11 @@ const Wrapper = tw.div`
 `;
 
 const ButtonContainer = tw.div`
-  px-4 bg-white
+  px-4
 `;
 
 const BackButton = tw.img`
-  h-12 
+  h-12 ml-4
 `;
 
 const FromToIcons = tw.div`
@@ -89,9 +89,9 @@ const StarIcon = tw.img`
 `;
 
 const ButtonContainer = tw.div`
-  
+  flex flex-1 items-center m-4
 `;
 
 // const Button = tw.button`
-//   bg-black
+//   bg-black text-white py-2 px-4 flex-1
 // `;
